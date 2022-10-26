@@ -13,7 +13,7 @@ services:
     container_name: catalog.api
     environment:
       - "DatabaseSettings__ConnectionString=mongodb://catalogdb:27017"
-      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_ENVIRONMENT=Production
       - "ElasticConfiguration:Uri=http://elasticsearch:9200"
     depends_on:
       - catalogdb
